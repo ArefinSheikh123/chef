@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef's Table | Gulshan 2 · Gourmet Artisanal Food Collective & Indoor Garden</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FAF8F5',
+            linen: '#F4EFEB',
+            stonecream: '#ECE5DB',
+            charcoal: {
+              900: '#141414',
+              800: '#222222',
+              700: '#383838',
+              600: '#5A5A5A',
+              400: '#8A8A88',
+              200: '#D5D3CE',
+              100: '#EBE9E4'
+            },
+            terracotta: {
+              DEFAULT: '#C86B43',
+              dark: '#A95530',
+              soft: '#F3E4DC',
+              light: '#DF855F'
+            },
+            olive: {
+              DEFAULT: '#4E5A44',
+              light: '#6F7E62',
+              soft: '#EAF0E7'
+            },
+            amberwood: '#B37D4E'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #222222;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: #C86B43;
+      color: #FAF8F5;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D5D3CE;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C86B43;
+    }
+
+    .glass-light {
+      background: rgba(250, 248, 245, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -12px rgba(40, 32, 20, 0.08);
+      border-color: #C86B43;
+    }
+  </style>
+</head>
+<body class="bg-alabaster text-charcoal-800 antialiased selection:bg-terracotta selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="border-b border-charcoal-100 bg-linen py-2.5 px-4 text-xs tracking-wider text-charcoal-600 text-center flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+    <span class="flex items-center gap-1.5 font-medium text-charcoal-900">
+      <span class="flex text-amber-500">
+        <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500"></i>
+      </span>
+      <span>4.5 / 5.0</span>
+      <span class="text-charcoal-400 font-normal">(10,365+ Reviews &bull; Google Maps)</span>
+    </span>
+    <span class="hidden md:inline text-charcoal-200">|</span>
+    <span class="flex items-center gap-1.5">
+      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-terracotta"></i>
+      Gulshan Centre Point (Level 2), Road 90, Gulshan 2, Dhaka 1212
+    </span>
+    <span class="hidden sm:inline text-charcoal-200">|</span>
+    <a href="tel:+8801918643663" class="hover:text-terracotta transition-colors flex items-center gap-1 font-semibold text-charcoal-800">
+      <i data-lucide="phone" class="w-3.5 h-3.5 text-terracotta"></i> +8801918643663
+    </a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 glass-light border-b border-charcoal-100/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="group flex flex-col">
+        <span class="font-serif text-2xl sm:text-3xl tracking-[0.2em] uppercase text-charcoal-900 font-semibold group-hover:text-terracotta transition-colors">
+          CHEF’S TABLE
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.35em] text-terracotta font-semibold -mt-1">
+          Gulshan 2 &bull; Centre Point
+        </span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.18em] text-charcoal-700 font-medium">
+        <a href="#about" class="hover:text-terracotta transition-colors">The Concept</a>
+        <a href="#kitchens" class="hover:text-terracotta transition-colors">Kitchens</a>
+        <a href="#menu" class="hover:text-terracotta transition-colors">Curated Menu</a>
+        <a href="#experience" class="hover:text-terracotta transition-colors">Indoor Garden</a>
+        <a href="#reviews" class="hover:text-terracotta transition-colors">Reviews</a>
+        <a href="#location" class="hover:text-terracotta transition-colors">Visitor Info</a>
+      </nav>
+
+      <!-- Action Button Group -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:+8801918643663" class="px-4 py-2.5 rounded-full border border-charcoal-200 hover:border-terracotta text-charcoal-800 text-xs tracking-wider font-medium transition-all flex items-center gap-2 hover:bg-white shadow-sm">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-terracotta"></i>
+          <span>+8801918643663</span>
+        </a>
+        <a href="#reserve" class="px-5 py-2.5 rounded-full bg-charcoal-900 hover:bg-terracotta text-white font-medium text-xs tracking-wider transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm">
+          Table & Events Inquiry
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden p-2 text-charcoal-700 hover:text-charcoal-900 rounded-lg hover:bg-linen">
+        <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-charcoal-100 bg-alabaster/98 px-6 py-6 transition-all shadow-lg">
+      <nav class="flex flex-col gap-4 text-sm tracking-widest uppercase text-charcoal-700 font-medium">
+        <a href="#about" class="mobile-nav-link py-2 border-b border-charcoal-100 hover:text-terracotta">The Concept</a>
+        <a href="#kitchens" class="mobile-nav-link py-2 border-b border-charcoal-100 hover:text-terracotta">Artisan Kitchens</a>
+        <a href="#menu" class="mobile-nav-link py-2 border-b border-charcoal-100 hover:text-terracotta">Curated Menu</a>
+        <a href="#experience" class="mobile-nav-link py-2 border-b border-charcoal-100 hover:text-terracotta">Indoor Garden</a>
+        <a href="#reviews" class="mobile-nav-link py-2 border-b border-charcoal-100 hover:text-terracotta">Reviews (10,365+)</a>
+        <a href="#location" class="mobile-nav-link py-2 border-b border-charcoal-100 hover:text-terracotta">Gulshan Centre Point</a>
+      </nav>
+      <div class="mt-6 flex flex-col gap-3">
+        <a href="tel:+8801918643663" class="w-full py-3 rounded-xl border border-terracotta text-terracotta flex items-center justify-center gap-2 text-xs font-semibold tracking-wider">
+          <i data-lucide="phone" class="w-4 h-4"></i> Call Concierge: +8801918643663
+        </a>
+        <a href="#reserve" class="mobile-nav-link w-full py-3 rounded-xl bg-charcoal-900 text-white text-center font-semibold text-xs tracking-wider">
+          Reserve or Inquire
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 sm:py-24 bg-gradient-to-b from-linen via-alabaster to-alabaster">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <!-- Rating badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-charcoal-100 shadow-sm">
+            <span class="flex text-amber-500">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star-half" class="w-4 h-4 fill-amber-500"></i>
+            </span>
+            <span class="text-xs text-charcoal-800 font-semibold tracking-wide">
+              4.5 / 5.0 &bull; 10,365+ Reviews
+            </span>
+            <span class="text-charcoal-400 text-xs hidden sm:inline">&bull; Dhaka's Most Celebrated Dining Hub</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-light tracking-tight leading-[1.08] text-charcoal-900">
+            Dhaka’s Landmark <br>
+            <span class="font-serif italic font-normal text-terracotta">Gourmet Food Collective</span> <br>
+            & Indoor Garden.
+          </h1>
+
+          <p class="max-w-xl text-charcoal-600 text-base sm:text-lg font-light leading-relaxed">
+            Located on Level 2 of Gulshan Centre Point. Chef's Table unites over 20+ acclaimed artisanal kitchens under a lush, sunlit botanical canopy. Experience woodfired pizzas, fresh sushi, prime grills, and specialty single-origin coffees all in one vibrant space.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full bg-charcoal-900 hover:bg-terracotta text-white font-medium text-xs tracking-widest uppercase transition-all shadow-md hover:shadow-lg text-center">
+              Explore Cuisines & Menu
+            </a>
+            <a href="#reserve" class="w-full sm:w-auto px-8 py-4 rounded-full border border-charcoal-200 bg-white hover:border-terracotta text-charcoal-800 text-xs tracking-widest uppercase transition-all shadow-sm text-center flex items-center justify-center gap-2">
+              <span>Reserve & Plan Visit</span>
+              <i data-lucide="arrow-down" class="w-4 h-4 text-terracotta"></i>
+            </a>
+          </div>
+
+          <!-- Feature badges -->
+          <div class="pt-8 border-t border-charcoal-200/60 grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div>
+              <span class="block text-2xl font-serif font-medium text-charcoal-900">20+</span>
+              <span class="text-xs text-charcoal-600 font-light">Artisan Stalls & Kitchens</span>
+            </div>
+            <div>
+              <span class="block text-2xl font-serif font-medium text-terracotta">Level 2</span>
+              <span class="text-xs text-charcoal-600 font-light">Gulshan Centre Point</span>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <span class="block text-2xl font-serif font-medium text-charcoal-900">11:00 AM – 11:30 PM</span>
+              <span class="text-xs text-charcoal-600 font-light">Open Every Day</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Collage -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative z-10 rounded-3xl overflow-hidden border border-charcoal-100 shadow-xl bg-white p-3">
+            <img 
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop" 
+              alt="Chef's Table Vibrant Dining Ambience" 
+              class="w-full h-[440px] sm:h-[480px] object-cover rounded-2xl"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl"></div>
+            
+            <!-- Bottom card overlay inside photo -->
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/60 shadow-md">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-terracotta font-semibold block">Social Culinary Hub</span>
+                  <p class="font-serif text-lg font-medium text-charcoal-900">Chef's Table &bull; Gulshan 2</p>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-olive-soft text-olive flex items-center justify-center font-bold">
+                  <i data-lucide="leaf" class="w-5 h-5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative Floating Card -->
+          <div class="hidden sm:block absolute -top-4 -left-6 z-20 bg-white border border-charcoal-100 px-5 py-3 rounded-2xl shadow-lg">
+            <span class="text-xs font-semibold text-charcoal-900 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Live Kitchens In Action
+            </span>
+            <span class="text-[11px] text-charcoal-400">Freshly prepared to order</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE CONCEPT / ABOUT -->
+    <section id="about" class="py-20 sm:py-28 bg-white border-y border-charcoal-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-semibold">The Chef's Table Experience</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 leading-tight">
+              One Shared Roof, <br>
+              <span class="font-serif italic text-charcoal-800">Countless Global Culinary Journeys.</span>
+            </h2>
+            <div class="h-0.5 w-16 bg-terracotta"></div>
+            
+            <p class="text-charcoal-600 text-sm sm:text-base leading-relaxed font-light">
+              Chef’s Table at Gulshan Centre Point redefined Dhaka's casual dining culture. Designed as an organic indoor garden sanctuary with natural wood finishes and sunlight filtering through expansive windows, it offers a refreshing alternative to traditional dining.
+            </p>
+            <p class="text-charcoal-600 text-sm sm:text-base leading-relaxed font-light">
+              No compromises. When dining with friends, family, or colleagues, everyone chooses exactly what they crave: Neapolitan pizzas with blistered sourdough crusts, flaming robata skewers, artisan smash burgers, freshly hand-rolled maki, and specialty iced flat whites.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+              <div class="p-4 rounded-2xl bg-alabaster border border-charcoal-100">
+                <i data-lucide="utensils-crossed" class="w-6 h-6 text-terracotta mb-2"></i>
+                <h4 class="font-serif text-lg font-medium text-charcoal-900">Live Theatrics</h4>
+                <p class="text-xs text-charcoal-600 font-light mt-1">Open kitchens and woodfired ovens right before your eyes.</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-alabaster border border-charcoal-100">
+                <i data-lucide="flower" class="w-6 h-6 text-olive mb-2"></i>
+                <h4 class="font-serif text-lg font-medium text-charcoal-900">Indoor Garden</h4>
+                <p class="text-xs text-charcoal-600 font-light mt-1">Lush botanical greenery and spacious airy walkways.</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-alabaster border border-charcoal-100">
+                <i data-lucide="users" class="w-6 h-6 text-amberwood mb-2"></i>
+                <h4 class="font-serif text-lg font-medium text-charcoal-900">Social Seating</h4>
+                <p class="text-xs text-charcoal-600 font-light mt-1">Communal long tables, cozy cafe banquettes, and meeting spots.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept Image Grid -->
+          <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div class="rounded-2xl overflow-hidden border border-charcoal-100 shadow-sm h-64">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Indoor Garden Cafe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-charcoal-100 shadow-sm h-48">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=800&auto=format&fit=crop" alt="Sushi Master Craft" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            </div>
+            <div class="space-y-4 pt-6">
+              <div class="rounded-2xl overflow-hidden border border-charcoal-100 shadow-sm h-48">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop" alt="Woodfired Pizza" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-charcoal-100 shadow-sm h-64">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Specialty Coffee Bar" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED KITCHENS / STALLS -->
+    <section id="kitchens" class="py-16 sm:py-24 bg-linen/50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-semibold">The Artisans</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 mt-2">
+            Curated Kitchens & Concepts
+          </h2>
+          <p class="text-charcoal-600 text-sm font-light mt-3">
+            Hand-picked culinary brands operating with passionate chefs, dedicated prep kitchens, and authentic import ingredients.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-charcoal-100 shadow-sm hover:border-terracotta transition-colors text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-terracotta-soft text-terracotta flex items-center justify-center mb-3">
+              <i data-lucide="pizza" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-charcoal-900">Napoli Oven</h3>
+            <p class="text-xs text-charcoal-500 font-light mt-1">48-Hour Fermented Neapolitan Sourdough Pizzas</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-charcoal-100 shadow-sm hover:border-terracotta transition-colors text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-olive-soft text-olive flex items-center justify-center mb-3">
+              <i data-lucide="fish" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-charcoal-900">Tokyo Robata</h3>
+            <p class="text-xs text-charcoal-500 font-light mt-1">Fresh Salmon Nigiri, Maki Rolls & Ramen Bowls</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-charcoal-100 shadow-sm hover:border-terracotta transition-colors text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-50 text-amber-700 flex items-center justify-center mb-3">
+              <i data-lucide="beef" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-charcoal-900">Prime Cuts</h3>
+            <p class="text-xs text-charcoal-500 font-light mt-1">Dry-Aged Steaks & Brioche Wagyu Smash Burgers</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-charcoal-100 shadow-sm hover:border-terracotta transition-colors text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-stonecream text-charcoal-800 flex items-center justify-center mb-3">
+              <i data-lucide="coffee" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl font-medium text-charcoal-900">Artisan Roast</h3>
+            <p class="text-xs text-charcoal-500 font-light mt-1">Single Origin Espresso, Pour-Overs & French Patisserie</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CURATED MENU WITH PHOTOS -->
+    <section id="menu" class="py-20 sm:py-28 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Header & Category Switcher -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-semibold">Epicurean Selections</span>
+          <h2 class="font-serif text-4xl sm:text-5xl font-light text-charcoal-900 mt-2 mb-3">
+            Popular Specialties at Chef's Table
+          </h2>
+          <p class="text-charcoal-600 text-sm font-light">
+            All dishes are prepared fresh to order. Click on any dish card to view detailed ingredients, pairings, and chef's preparation notes. Prices in BDT (৳).
+          </p>
+
+          <!-- Category filter buttons -->
+          <div class="flex flex-wrap justify-center gap-2 mt-8 p-1.5 rounded-full bg-white border border-charcoal-200/80 shadow-sm max-w-3xl mx-auto">
+            <button onclick="filterMenu('all', this)" class="menu-tab-btn active px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-charcoal-900 text-white">
+              All Creations
+            </button>
+            <button onclick="filterMenu('pizza', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider text-charcoal-600 hover:text-charcoal-900 transition-all">
+              Woodfired Pizza & Pasta
+            </button>
+            <button onclick="filterMenu('asian', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider text-charcoal-600 hover:text-charcoal-900 transition-all">
+              Pan-Asian & Sushi
+            </button>
+            <button onclick="filterMenu('burgers', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider text-charcoal-600 hover:text-charcoal-900 transition-all">
+              Steaks & Gourmet Burgers
+            </button>
+            <button onclick="filterMenu('cafe', this)" class="menu-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider text-charcoal-600 hover:text-charcoal-900 transition-all">
+              Coffee & Desserts
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Grid -->
+        <div id="menuContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Dish 1: Burrata & Truffle Pizza -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="pizza"
+               onclick="openDishModal(
+                 'Truffle Crema & Fresh Burrata Pizza', 
+                 '৳ 1,450', 
+                 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop', 
+                 'Woodfired Neapolitan crust fermented for 48 hours, topped with black truffle crema, torn fresh Italian burrata, fior di latte mozzarella, baby wild arugula, and aged balsamic drizzle.',
+                 'Napoli Woodfired Oven',
+                 'Woodfired Pizza & Pasta',
+                 'Gluten, Dairy (Fresh Cow Burrata)',
+                 'Blistered at 450°C in under 90 seconds'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop" 
+                alt="Truffle Crema & Fresh Burrata Pizza" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-terracotta border border-terracotta/20 shadow-sm">
+                Napoli Oven
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 1,450
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Truffle Crema & Burrata
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  48-hr fermented crust, black truffle paste, torn Italian burrata, fresh arugula, extra virgin olive oil.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3.5 h-3.5 text-terracotta"></i> 450°C Woodfired</span>
+                <span class="text-terracotta font-semibold">Chef's Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 2: Salmon Truffle Aburi Roll -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="asian"
+               onclick="openDishModal(
+                 'Torch-Seared Salmon Aburi Roll', 
+                 '৳ 1,280', 
+                 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1000&auto=format&fit=crop', 
+                 'Fresh Norwegian salmon torched tableside with truffle-infused spicy mayo, filled with crisp tempura prawn and ripe Hass avocado, crowned with orange tobiko and scallions.',
+                 'Tokyo Robata',
+                 'Pan-Asian & Sushi',
+                 'Seafood (Salmon, Prawn), Soy, Sesame',
+                 'Fresh wasabi and house pickled gari included'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=800&auto=format&fit=crop" 
+                alt="Torch-Seared Salmon Aburi Roll" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-olive border border-olive/20 shadow-sm">
+                Tokyo Robata
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 1,280
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Torch-Seared Salmon Aburi
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Norwegian salmon flamed with truffle mayo, tempura prawn, avocado, and tobiko roe.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-olive"></i> Torched Fresh</span>
+                <span class="text-olive font-semibold">Raw Bar Favorite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 3: Prime Wagyu Smash Burger -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="burgers"
+               onclick="openDishModal(
+                 'Double Wagyu Truffle Smash Burger', 
+                 '৳ 980', 
+                 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop', 
+                 'Two smashed premium Wagyu beef patties with lacy crispy edges, melted sharp English cheddar, caramelized onions, black truffle aioli, tucked in a toasted Japanese milk bun. Served with rosemary fries.',
+                 'Prime Cuts Grill',
+                 'Steaks & Gourmet Burgers',
+                 'Gluten (Milk Bun), Dairy, Mustard',
+                 'Cast iron smashed with secret seasoning'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop" 
+                alt="Double Wagyu Truffle Smash Burger" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-amber-700 border border-amber-200 shadow-sm">
+                Prime Cuts
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 980
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Double Wagyu Smash
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Crispy-edge Wagyu patties, melted cheddar, sweet caramelized onions, truffle aioli, brioche bun.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="beef" class="w-3.5 h-3.5 text-amber-700"></i> Certified Wagyu</span>
+                <span class="text-amber-700 font-semibold">House Specialty</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 4: Tonkotsu-Style Black Garlic Ramen -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="asian"
+               onclick="openDishModal(
+                 'Black Garlic Infused Chashu Ramen', 
+                 '৳ 890', 
+                 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=1000&auto=format&fit=crop', 
+                 'Slow-simmered rich chicken & beef broth steeped with scorched garlic oil (Mayu), handmade springy ramen noodles, braised tender chashu, jammy ajitsuke tamago egg, and nori sheet.',
+                 'Tokyo Robata',
+                 'Pan-Asian & Sushi',
+                 'Wheat Noodles, Soy, Sesame, Egg',
+                 'Simmered for 12 hours for rich gelatinous body'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop" 
+                alt="Black Garlic Chashu Ramen" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-olive border border-olive/20 shadow-sm">
+                Tokyo Robata
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 890
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Black Garlic Chashu Ramen
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  12-hr rich broth, springy wheat noodles, tender braised beef, seasoned soft egg, black garlic oil.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="soup" class="w-3.5 h-3.5 text-olive"></i> 12-Hour Broth</span>
+                <span class="text-charcoal-700 font-semibold">Comfort Bowl</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 5: Grilled Australian Ribeye -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="burgers"
+               onclick="openDishModal(
+                 'Australian Grain-Fed Ribeye (300g)', 
+                 '৳ 2,450', 
+                 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop', 
+                 'Flame-grilled prime Australian ribeye steak basted in rosemary-garlic butter. Served with roasted bone marrow sauce, charred broccolini, and creamy parmesan mash.',
+                 'Prime Cuts Grill',
+                 'Steaks & Gourmet Burgers',
+                 'Dairy (Herb Butter, Mash)',
+                 'Choice of doneness: Medium Rare recommended'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" 
+                alt="Australian Grain-Fed Ribeye" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-amber-700 border border-amber-200 shadow-sm">
+                Prime Cuts
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 2,450
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Australian Grain-Fed Ribeye
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Flame-charred 300g ribeye, garlic-herb basting, truffle peppercorn glaze, velvety potato mash.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3.5 h-3.5 text-amber-700"></i> Open Flame Grill</span>
+                <span class="text-amber-700 font-semibold">Premium Cut</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 6: Tagliatelle al Funghi -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="pizza"
+               onclick="openDishModal(
+                 'Handmade Tagliatelle Ai Funghi', 
+                 '৳ 880', 
+                 'https://images.unsplash.com/photo-1621996346565-e3d5d6281691?q=80&w=1000&auto=format&fit=crop', 
+                 'Fresh egg tagliatelle tossed in wild porcini and portobello mushroom ragu, finished with fresh thyme, 24-month aged Parmigiano Reggiano, and cold-pressed extra virgin olive oil.',
+                 'Napoli Woodfired Oven',
+                 'Woodfired Pizza & Pasta',
+                 'Gluten, Dairy (Parmigiano), Egg',
+                 'Hand-rolled pasta made every morning'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1621996346565-e3d5d6281691?q=80&w=800&auto=format&fit=crop" 
+                alt="Handmade Tagliatelle Ai Funghi" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-terracotta border border-terracotta/20 shadow-sm">
+                Napoli Oven
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 880
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Handmade Tagliatelle Funghi
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Fresh ribbon egg pasta, wild porcini mushroom sauce, aged Parmigiano Reggiano, thyme butter.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-terracotta"></i> Handmade Daily</span>
+                <span class="text-emerald-700 font-semibold">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 7: Basque Burnt Cheesecake -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="cafe"
+               onclick="openDishModal(
+                 'San Sebastián Basque Burnt Cheesecake', 
+                 '৳ 490', 
+                 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1000&auto=format&fit=crop', 
+                 'Caramelized, dark-baked crust with a molten, custardy center of rich cream cheese and vanilla bean. Served warm with homemade tart raspberry compote.',
+                 'Artisan Roast & Bakery',
+                 'Coffee & Desserts',
+                 'Dairy (Cream Cheese), Egg',
+                 'Baked in small artisan batches every 3 hours'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=800&auto=format&fit=crop" 
+                alt="San Sebastián Basque Burnt Cheesecake" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-charcoal-800 border border-charcoal-200 shadow-sm">
+                Artisan Roast
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 490
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Basque Burnt Cheesecake
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Caramelized blistered crust, creamy molten vanilla cheese center, fresh berry compote.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="heart" class="w-3.5 h-3.5 text-terracotta"></i> Guest Favorite</span>
+                <span class="text-terracotta font-semibold">Molten Core</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 8: Single Origin Specialty Coffee -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="cafe"
+               onclick="openDishModal(
+                 'Ethiopian Yirgacheffe Pour-Over V60', 
+                 '৳ 380', 
+                 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000&auto=format&fit=crop', 
+                 'Hand-poured single-origin Arabica beans showcasing floral jasmine aromas, bergamot brightness, and a silky honeyed peach finish. Served hot or over crystal ice blocks.',
+                 'Artisan Roast & Bakery',
+                 'Coffee & Desserts',
+                 '100% Specialty Grade Arabica',
+                 'Brewed manually via Hario V60 dripper'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" 
+                alt="Ethiopian Yirgacheffe Pour-Over V60" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-charcoal-800 border border-charcoal-200 shadow-sm">
+                Artisan Roast
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 380
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Ethiopia V60 Pour-Over
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Single-origin Arabica, delicate notes of jasmine blossom, crisp bergamot, and sweet stone fruit.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="coffee" class="w-3.5 h-3.5 text-charcoal-800"></i> Manual V60</span>
+                <span class="text-charcoal-700 font-semibold">Specialty Grade</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 9: Truffle Parmesan Crispy Fries -->
+          <div class="menu-item group bg-white border border-charcoal-100 rounded-3xl overflow-hidden card-hover flex flex-col justify-between cursor-pointer shadow-sm"
+               data-category="burgers"
+               onclick="openDishModal(
+                 'Truffle Pecorino Hand-Cut Fries', 
+                 '৳ 420', 
+                 'https://images.unsplash.com/photo-1576107232684-1279f3908594?q=80&w=1000&auto=format&fit=crop', 
+                 'Double-cooked golden russet potato wedges tossed in white truffle oil, grated aged Pecorino cheese, finely chopped fresh parsley, with roasted garlic and chive emulsion dip.',
+                 'Prime Cuts Grill',
+                 'Steaks & Gourmet Burgers',
+                 'Dairy (Pecorino, Garlic Dip)',
+                 'Double fried for maximum crunch'
+               )">
+            <div class="relative h-60 overflow-hidden bg-linen">
+              <img 
+                src="https://images.unsplash.com/photo-1576107232684-1279f3908594?q=80&w=800&auto=format&fit=crop" 
+                alt="Truffle Pecorino Hand-Cut Fries" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-white/95 backdrop-blur font-semibold text-amber-700 border border-amber-200 shadow-sm">
+                Prime Cuts
+              </span>
+              <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full text-sm font-serif font-semibold bg-charcoal-900 text-white shadow-md">
+                ৳ 420
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-serif text-2xl text-charcoal-900 font-medium group-hover:text-terracotta transition-colors">
+                    Truffle Pecorino Fries
+                  </h3>
+                </div>
+                <p class="text-charcoal-600 text-xs leading-relaxed font-light line-clamp-2">
+                  Crisp double-fried potatoes tossed in white truffle essence, grated cheese, and garlic chive aioli.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-charcoal-100 flex items-center justify-between text-[11px] text-charcoal-500 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-700"></i> Perfect Sharing</span>
+                <span class="text-emerald-700 font-semibold">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Concierge note -->
+        <div class="mt-14 text-center">
+          <p class="text-xs text-charcoal-500 tracking-wide">
+            Need customized group catering, office corporate platter orders, or event floor hosting?
+            <a href="tel:+8801918643663" class="text-terracotta underline underline-offset-4 hover:text-terracotta-dark ml-1 font-semibold">
+              Speak with our Floor Concierge: +8801918643663
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THE EXPERIENCE / INDOOR BOTANICAL GARDEN -->
+    <section id="experience" class="py-20 sm:py-28 bg-white border-y border-charcoal-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          <div class="space-y-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-olive font-semibold">Atmosphere & Ambiance</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 leading-tight">
+              An Architectural Oasis in Gulshan 2
+            </h2>
+            <p class="text-charcoal-600 text-sm sm:text-base leading-relaxed font-light">
+              Chef’s Table at Gulshan Centre Point was conceptualized to be much more than a dining destination. The expansive venue integrates living tropical foliage, natural blonde oak timber, ambient pendant lights, and high ceilings that filter daylight.
+            </p>
+            
+            <div class="space-y-3 pt-2 text-xs sm:text-sm text-charcoal-700">
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-olive-soft text-olive flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                </div>
+                <span><strong>Lush Green Garden Zones:</strong> Plant-lined perimeters offer refreshing privacy and calm.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-olive-soft text-olive flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                </div>
+                <span><strong>Work-Friendly Spaces:</strong> Fast Wi-Fi, accessible charging sockets, and quiet morning corners.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-olive-soft text-olive flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                </div>
+                <span><strong>Gulshan Centre Point Comfort:</strong> Multi-level underground parking with elevators straight to Level 2.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-olive-soft text-olive flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                </div>
+                <span><strong>Family & Wheelchair Friendly:</strong> Wide, unobstructed aisles and spacious seating setups.</span>
+              </div>
+            </div>
+
+            <div class="pt-6 flex flex-wrap gap-4">
+              <div class="bg-linen px-5 py-3 rounded-2xl border border-charcoal-100">
+                <span class="block font-serif text-2xl font-semibold text-charcoal-900">450+</span>
+                <span class="text-[11px] text-charcoal-500 uppercase tracking-wider">Seating Capacity</span>
+              </div>
+              <div class="bg-linen px-5 py-3 rounded-2xl border border-charcoal-100">
+                <span class="block font-serif text-2xl font-semibold text-terracotta">Level 2</span>
+                <span class="text-[11px] text-charcoal-500 uppercase tracking-wider">Direct Elevator</span>
+              </div>
+              <div class="bg-linen px-5 py-3 rounded-2xl border border-charcoal-100">
+                <span class="block font-serif text-2xl font-semibold text-olive">100% Halal</span>
+                <span class="text-[11px] text-charcoal-500 uppercase tracking-wider">All Stalls Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collage Photos -->
+          <div class="grid grid-cols-2 gap-4">
+            <img 
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" 
+              alt="Gulshan Centre Point Food Court Interior" 
+              class="w-full h-72 object-cover rounded-3xl border border-charcoal-100 shadow-sm"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" 
+              alt="Dining Greenery and Seating" 
+              class="w-full h-72 object-cover rounded-3xl border border-charcoal-100 shadow-sm mt-8"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESERVATION / GROUP INQUIRY -->
+    <section id="reserve" class="py-20 sm:py-28 relative bg-alabaster">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-semibold">Hospitality & Gatherings</span>
+          <h2 class="font-serif text-4xl sm:text-5xl font-light text-charcoal-900 mt-2 mb-3">
+            Plan Your Visit or Event
+          </h2>
+          <p class="text-charcoal-600 text-sm font-light max-w-lg mx-auto">
+            While Chef’s Table welcomes walk-ins daily, we recommend reserving for parties of 6+ or private corporate dinners. For urgent inquiries, call 
+            <a href="tel:+8801918643663" class="text-terracotta font-semibold hover:underline">+8801918643663</a>.
+          </p>
+        </div>
+
+        <div class="bg-white border border-charcoal-200/80 rounded-3xl p-8 sm:p-12 shadow-md relative overflow-hidden">
+          <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <!-- Name -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="guestName">
+                  Your Full Name *
+                </label>
+                <input 
+                  type="text" 
+                  id="guestName" 
+                  required 
+                  placeholder="e.g. Navid Rahman" 
+                  class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="guestPhone">
+                  Phone Number *
+                </label>
+                <input 
+                  type="tel" 
+                  id="guestPhone" 
+                  required 
+                  placeholder="+880 1XXXXXXXXX" 
+                  class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Party Size -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="guestCount">
+                  Number of Guests *
+                </label>
+                <select 
+                  id="guestCount" 
+                  required
+                  class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+                >
+                  <option value="2-4">2 – 4 Guests (Small Table)</option>
+                  <option value="5-8" selected>5 – 8 Guests (Family Group)</option>
+                  <option value="9-15">9 – 15 Guests (Long Communal Table)</option>
+                  <option value="16+">16+ Guests (Corporate / Private Event)</option>
+                </select>
+              </div>
+
+              <!-- Zone Preference -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="diningZone">
+                  Preferred Seating Zone
+                </label>
+                <select 
+                  id="diningZone" 
+                  class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+                >
+                  <option value="Indoor Garden Center">Indoor Garden Canopy (Lush Center)</option>
+                  <option value="Gulshan View Window">Window View (Overlooking Gulshan 2)</option>
+                  <option value="Artisan Cafe Lounge">Artisan Coffee Lounge (Quiet)</option>
+                  <option value="Open Kitchen Front">Live Kitchen View</option>
+                </select>
+              </div>
+
+              <!-- Date -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="reserveDate">
+                  Date of Visit *
+                </label>
+                <input 
+                  type="date" 
+                  id="reserveDate" 
+                  required 
+                  class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+                />
+              </div>
+
+              <!-- Time Slot -->
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="reserveTime">
+                  Time Slot *
+                </label>
+                <select 
+                  id="reserveTime" 
+                  required
+                  class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+                >
+                  <optgroup label="Lunch">
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                  </optgroup>
+                  <optgroup label="Afternoon & Tea">
+                    <option value="04:30 PM">04:30 PM</option>
+                    <option value="05:30 PM">05:30 PM</option>
+                  </optgroup>
+                  <optgroup label="Dinner & Evening">
+                    <option value="07:00 PM">07:00 PM</option>
+                    <option value="08:30 PM" selected>08:30 PM</option>
+                    <option value="09:30 PM">09:30 PM</option>
+                    <option value="10:30 PM">10:30 PM</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <!-- Special Notes -->
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-charcoal-700 font-semibold mb-2" for="specialNotes">
+                Occasion, Special Preferences or Dietary Notes
+              </label>
+              <textarea 
+                id="specialNotes" 
+                rows="3" 
+                placeholder="Birthday setup, corporate meeting invoice requirement, child seating..."
+                class="w-full bg-alabaster border border-charcoal-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:border-terracotta focus:bg-white focus:outline-none transition-colors"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full py-4 rounded-xl bg-charcoal-900 hover:bg-terracotta text-white font-semibold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg"
+            >
+              Submit Table / Group Inquiry
+            </button>
+            
+            <p class="text-center text-[11px] text-charcoal-500">
+              For instant confirmation, you can reach our operations desk directly at <span class="font-semibold text-charcoal-800">+8801918643663</span>.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: REVIEWS (4.5 RATING & 10,365 REVIEWS) -->
+    <section id="reviews" class="py-20 sm:py-28 bg-white border-t border-charcoal-100">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-semibold">Community Verified</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 mt-2">
+              Loved by Over 10,000+ Diners
+            </h2>
+          </div>
+          
+          <!-- Rating Box -->
+          <div class="flex items-center gap-4 bg-alabaster border border-charcoal-200 px-6 py-4 rounded-2xl shadow-sm">
+            <div class="text-right">
+              <div class="flex items-center justify-end text-amber-500 gap-1">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star-half" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <span class="text-xs text-charcoal-500 font-medium">Google Maps Rating</span>
+            </div>
+            <div class="font-serif text-4xl text-charcoal-900 font-bold">4.5</div>
+            <div class="text-xs text-charcoal-500 pl-3 border-l border-charcoal-200">
+              <strong class="text-charcoal-900 block font-semibold">10,365 Reviews</strong>
+              Gulshan 2 Collective
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1 -->
+          <div class="bg-alabaster border border-charcoal-100 rounded-3xl p-7 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex text-amber-500 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <p class="text-charcoal-700 text-sm font-light leading-relaxed mb-6 italic">
+                "Chef’s Table at Gulshan Centre Point is easily Dhaka’s best social dining hub. The woodfired sourdough pizza from Napoli Oven is authentic Italian perfection, while my friends had sushi and ramen. Incredible indoor garden vibes!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-charcoal-200/60">
+              <div class="w-10 h-10 rounded-full bg-stonecream text-charcoal-900 font-serif font-semibold flex items-center justify-center text-sm">
+                AK
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-charcoal-900 block">Adnan Karim</span>
+                <span class="text-[11px] text-charcoal-500">Google Local Guide &bull; 140+ Reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-alabaster border border-charcoal-100 rounded-3xl p-7 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex text-amber-500 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <p class="text-charcoal-700 text-sm font-light leading-relaxed mb-6 italic">
+                "Very spacious, well ventilated, and impeccably maintained. Perfect place in Gulshan 2 to have business catchups or family dinners. Parking at Centre Point is straightforward with elevator access right to Level 2."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-charcoal-200/60">
+              <div class="w-10 h-10 rounded-full bg-terracotta-soft text-terracotta font-serif font-semibold flex items-center justify-center text-sm">
+                SR
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-charcoal-900 block">Samira Rahman</span>
+                <span class="text-[11px] text-charcoal-500">Verified Diner &bull; Dhaka</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-alabaster border border-charcoal-100 rounded-3xl p-7 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex text-amber-500 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                <i data-lucide="star-half" class="w-4 h-4 fill-amber-500"></i>
+              </div>
+              <p class="text-charcoal-700 text-sm font-light leading-relaxed mb-6 italic">
+                "Their Wagyu smash burger followed by the Basque burnt cheesecake is unbeatable. Service desk was very helpful when we phoned (+8801918643663) to reserve a large family table for 12."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-charcoal-200/60">
+              <div class="w-10 h-10 rounded-full bg-olive-soft text-olive font-serif font-semibold flex items-center justify-center text-sm">
+                MZ
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-charcoal-900 block">Mahmudul Zaki</span>
+                <span class="text-[11px] text-charcoal-500">Gulshan Resident</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LOCATION & VISITOR INFORMATION -->
+    <section id="location" class="py-20 sm:py-28 bg-linen/60">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Contact Left -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-semibold">Location & Access</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light text-charcoal-900 leading-tight">
+              Visiting Gulshan Centre Point
+            </h2>
+            <p class="text-charcoal-600 text-sm font-light leading-relaxed">
+              Chef’s Table is situated prominently on Level 2 of the landmark Gulshan Centre Point at Road 90, Gulshan 2 circle.
+            </p>
+
+            <div class="bg-white border border-charcoal-100 rounded-3xl p-6 space-y-5 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-terracotta-soft text-terracotta flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-charcoal-900 font-semibold mb-1">Exact Address</h4>
+                  <p class="text-xs sm:text-sm text-charcoal-700 leading-relaxed font-light">
+                    Level 2, Gulshan Centre Point, <br>
+                    Road 90, Gulshan 2, Dhaka 1212, Bangladesh
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 pt-4 border-t border-charcoal-100">
+                <div class="w-10 h-10 rounded-xl bg-olive-soft text-olive flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-charcoal-900 font-semibold mb-1">Direct Hotline & WhatsApp</h4>
+                  <a href="tel:+8801918643663" class="text-sm font-semibold text-terracotta hover:underline block">
+                    +8801918643663
+                  </a>
+                  <span class="text-[11px] text-charcoal-500">Available during operating hours</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 pt-4 border-t border-charcoal-100">
+                <div class="w-10 h-10 rounded-xl bg-stonecream text-charcoal-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs uppercase tracking-wider text-charcoal-900 font-semibold mb-1">Service Hours</h4>
+                  <p class="text-xs text-charcoal-700 leading-relaxed font-light">
+                    Everyday: 11:00 AM &ndash; 11:30 PM <br>
+                    <span class="text-olive font-medium">Open 365 Days a Year</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap gap-3">
+              <a 
+                href="https://wa.me/8801918643663?text=Hello%20Chef%27s%20Table%20Gulshan%202,%20I%20would%20like%20to%20inquire%20about%20dining." 
+                target="_blank" 
+                class="flex-1 py-3 px-4 rounded-xl bg-white border border-charcoal-200 hover:border-terracotta text-charcoal-800 text-xs font-semibold tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all"
+              >
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                <span>WhatsApp Desk</span>
+              </a>
+              <a 
+                href="tel:+8801918643663" 
+                class="flex-1 py-3 px-4 rounded-xl bg-charcoal-900 hover:bg-terracotta text-white text-xs font-semibold tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all"
+              >
+                <i data-lucide="phone-outgoing" class="w-4 h-4"></i>
+                <span>Call +8801918643663</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Simulated Architectural Map Card -->
+          <div class="lg:col-span-7">
+            <div class="w-full bg-white border border-charcoal-200 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col justify-between relative overflow-hidden min-h-[420px]">
+              
+              <!-- Subtle blueprint grid -->
+              <div class="absolute inset-0 opacity-15 pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="lightgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+                      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#222" stroke-width="0.5"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#lightgrid)" />
+                </svg>
+              </div>
+
+              <div class="relative z-10 flex flex-wrap justify-between items-start gap-4">
+                <div>
+                  <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-terracotta bg-terracotta-soft px-3.5 py-1 rounded-full font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-terracotta animate-pulse"></span>
+                    Gulshan 2 Central Landmark
+                  </span>
+                  <h3 class="font-serif text-3xl text-charcoal-900 font-medium mt-3">Gulshan Centre Point</h3>
+                  <p class="text-xs text-charcoal-500 mt-1">Level 2 &bull; Road 90, Gulshan 2, Dhaka 1212</p>
+                </div>
+                <div class="bg-alabaster border border-charcoal-100 px-4 py-2 rounded-2xl text-right">
+                  <span class="text-[11px] text-charcoal-400 block font-medium">Verified Score</span>
+                  <span class="text-amber-500 font-bold text-sm">★ 4.5 (10,365)</span>
+                </div>
+              </div>
+
+              <div class="relative z-10 my-12 flex flex-col items-center justify-center text-center">
+                <div class="w-20 h-20 rounded-full bg-terracotta-soft flex items-center justify-center text-terracotta shadow-md mb-4">
+                  <i data-lucide="store" class="w-9 h-9"></i>
+                </div>
+                <h4 class="font-serif text-2xl text-charcoal-900 font-medium">Chef's Table Collective</h4>
+                <p class="text-xs text-charcoal-600 max-w-sm mt-1 font-light">
+                  Direct elevator access from Centre Point parking garage to Level 2.
+                </p>
+              </div>
+
+              <div class="relative z-10 pt-4 border-t border-charcoal-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span class="text-xs text-charcoal-500">Valet & Basement Parking Available</span>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Chef%27s+Table+Gulshan+Centre+Point+Dhaka+1212" 
+                  target="_blank" 
+                  class="w-full sm:w-auto px-6 py-3 rounded-full bg-charcoal-900 hover:bg-terracotta text-white text-xs font-semibold tracking-wider transition-all flex items-center justify-center gap-2 shadow-sm"
+                >
+                  <i data-lucide="navigation" class="w-4 h-4"></i>
+                  <span>Open in Google Maps</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: RESERVATION / INQUIRY TOAST CONFIRMATION -->
+  <div id="bookingModal" class="fixed inset-0 z-50 bg-charcoal-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white border border-charcoal-200 rounded-3xl p-8 max-w-md w-full shadow-2xl relative text-center animate-fade-in">
+      <div class="w-16 h-16 rounded-full bg-olive-soft text-olive mx-auto flex items-center justify-center mb-5">
+        <i data-lucide="check" class="w-8 h-8"></i>
+      </div>
+      <h3 class="font-serif text-3xl text-charcoal-900 mb-2 font-medium">Inquiry Received</h3>
+      <p class="text-xs text-charcoal-600 leading-relaxed mb-6 font-light">
+        Thank you, <span id="modalGuestName" class="text-terracotta font-semibold">Guest</span>. We have registered your reservation request for <span id="modalDetails" class="text-charcoal-900 font-semibold">your party</span> at Chef's Table Gulshan 2.
+      </p>
+      
+      <div class="bg-alabaster rounded-2xl p-4 text-left border border-charcoal-100 text-xs text-charcoal-600 mb-6 space-y-1.5">
+        <p><strong class="text-charcoal-900">Venue:</strong> Level 2, Gulshan Centre Point, Dhaka 1212</p>
+        <p><strong class="text-charcoal-900">Floor Desk:</strong> +8801918643663</p>
+        <p><strong class="text-terracotta font-semibold">Status:</strong> Guest Relations team will call to confirm.</p>
+      </div>
+
+      <button onclick="closeModal()" class="w-full py-3.5 rounded-full bg-charcoal-900 hover:bg-terracotta text-white text-xs font-semibold tracking-wider uppercase transition-colors">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL: DISH DETAILS LIGHTBOX -->
+  <div id="dishModal" class="fixed inset-0 z-50 bg-charcoal-900/70 backdrop-blur-sm hidden items-center justify-center p-4 sm:p-6">
+    <div class="bg-white border border-charcoal-100 rounded-3xl max-w-2xl w-full shadow-2xl overflow-hidden relative flex flex-col md:flex-row">
+      <button onclick="closeDishModal()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/90 border border-charcoal-200 text-charcoal-700 hover:text-charcoal-900 flex items-center justify-center transition-all shadow-sm">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <!-- Modal Image -->
+      <div class="w-full md:w-1/2 h-60 md:h-auto relative overflow-hidden bg-linen">
+        <img id="dishModalImg" src="" alt="Dish Preview" class="w-full h-full object-cover" />
+        <span id="dishModalKitchen" class="absolute top-4 left-4 text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-white/95 text-terracotta font-semibold shadow-sm border border-charcoal-100">
+          Kitchen
+        </span>
+      </div>
+
+      <!-- Modal Info -->
+      <div class="p-6 md:p-8 w-full md:w-1/2 flex flex-col justify-between">
+        <div>
+          <span id="dishModalCategory" class="text-[10px] uppercase tracking-widest text-charcoal-400 font-semibold block mb-1">Category</span>
+          <h3 id="dishModalTitle" class="font-serif text-2xl sm:text-3xl text-charcoal-900 font-medium leading-snug">Dish Name</h3>
+          <span id="dishModalPrice" class="font-serif text-2xl text-terracotta font-semibold block mt-1 mb-4">৳ 000</span>
+          
+          <p id="dishModalDesc" class="text-xs text-charcoal-600 leading-relaxed font-light mb-6">
+            Detailed culinary preparation notes.
+          </p>
+
+          <div class="space-y-2.5 pt-4 border-t border-charcoal-100 text-[11px] text-charcoal-600">
+            <div class="flex items-center justify-between">
+              <span class="text-charcoal-400 font-medium">Allergens / Ingredients:</span>
+              <span id="dishModalAllergen" class="text-charcoal-900 font-medium">None</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-charcoal-400 font-medium">Preparation Style:</span>
+              <span id="dishModalNote" class="text-charcoal-900 font-medium">Freshly prepared</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-4 flex gap-3">
+          <a href="#reserve" onclick="closeDishModal()" class="flex-1 py-3.5 rounded-full bg-charcoal-900 hover:bg-terracotta text-white font-semibold text-xs tracking-wider text-center uppercase transition-all shadow-sm">
+            Visit For This Dish
+          </a>
+          <a href="tel:+8801918643663" class="p-3.5 rounded-full border border-charcoal-200 hover:border-terracotta text-terracotta flex items-center justify-center transition-all">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-charcoal-100 bg-white pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2 space-y-4">
+          <span class="font-serif text-3xl tracking-[0.2em] uppercase text-charcoal-900 font-semibold block">
+            CHEF'S TABLE
+          </span>
+          <p class="text-xs text-charcoal-600 leading-relaxed max-w-sm font-light">
+            Dhaka’s premier gourmet food court and collective at Gulshan Centre Point. A vibrant indoor garden space hosting over 20+ artisan culinary brands under one sky.
+          </p>
+          <div class="flex items-center gap-3 text-amber-500 pt-2">
+            <div class="flex">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star-half" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <span class="text-xs text-charcoal-800 font-semibold">4.5 / 5.0 (10,365 Reviews)</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-charcoal-900 font-semibold mb-4">Discover</h4>
+          <ul class="space-y-2.5 text-xs text-charcoal-600 font-light">
+            <li><a href="#about" class="hover:text-terracotta transition-colors">The Indoor Garden Concept</a></li>
+            <li><a href="#kitchens" class="hover:text-terracotta transition-colors">Our Artisan Kitchens</a></li>
+            <li><a href="#menu" class="hover:text-terracotta transition-colors">Woodfired Pizzas & Pastas</a></li>
+            <li><a href="#menu" class="hover:text-terracotta transition-colors">Sushi & Pan-Asian Bowls</a></li>
+            <li><a href="#reserve" class="hover:text-terracotta transition-colors">Group Dining & Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-charcoal-900 font-semibold mb-4">Contact & Location</h4>
+          <p class="text-xs text-charcoal-600 leading-relaxed mb-3 font-light">
+            Level 2, Gulshan Centre Point, <br>
+            Road 90, Gulshan 2, Dhaka 1212
+          </p>
+          <a href="tel:+8801918643663" class="text-xs text-terracotta font-semibold hover:underline block">
+            Hotline: +8801918643663
+          </a>
+          <span class="text-[11px] text-charcoal-500 block mt-1">Open 11:00 AM – 11:30 PM Daily</span>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-charcoal-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-charcoal-500 gap-4">
+        <p>&copy; <span id="currentYear"></span> Chef's Table - Gulshan 2. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#about" class="hover:text-charcoal-900 transition-colors">Privacy & Guidelines</a>
+          <a href="tel:+8801918643663" class="hover:text-charcoal-900 transition-colors">Concierge Desk</a>
+          <a href="#location" class="hover:text-charcoal-900 transition-colors">Gulshan Centre Point</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Default Date to Tomorrow
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const dateInput = document.getElementById('reserveDate');
+    if (dateInput) {
+      dateInput.value = tomorrow.toISOString().split('T')[0];
+      dateInput.min = new Date().toISOString().split('T')[0];
+    }
+
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Menu Filtering
+    function filterMenu(category, clickedButton) {
+      const items = document.querySelectorAll('.menu-item');
+      const buttons = document.querySelectorAll('.menu-tab-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-charcoal-900', 'text-white');
+        btn.classList.add('text-charcoal-600');
+      });
+      clickedButton.classList.add('bg-charcoal-900', 'text-white');
+      clickedButton.classList.remove('text-charcoal-600');
+
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Reservation / Inquiry Form Handler
+    function handleReservationSubmit(event) {
+      event.preventDefault();
+      
+      const guestName = document.getElementById('guestName').value;
+      const guestCount = document.getElementById('guestCount').value;
+      const reserveDate = document.getElementById('reserveDate').value;
+      const reserveTime = document.getElementById('reserveTime').value;
+
+      document.getElementById('modalGuestName').textContent = guestName;
+      document.getElementById('modalDetails').textContent = `${guestCount} guests on ${reserveDate} at ${reserveTime}`;
+      
+      const modal = document.getElementById('bookingModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      document.getElementById('reservationForm').reset();
+      if (dateInput) {
+        dateInput.value = tomorrow.toISOString().split('T')[0];
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('bookingModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Dish Modal Handler
+    function openDishModal(title, price, imgUrl, description, kitchen, category, allergen, note) {
+      document.getElementById('dishModalTitle').textContent = title;
+      document.getElementById('dishModalPrice').textContent = price;
+      document.getElementById('dishModalImg').src = imgUrl;
+      document.getElementById('dishModalDesc').textContent = description;
+      document.getElementById('dishModalKitchen').textContent = kitchen;
+      document.getElementById('dishModalCategory').textContent = category;
+      document.getElementById('dishModalAllergen').textContent = allergen;
+      document.getElementById('dishModalNote').textContent = note;
+
+      const modal = document.getElementById('dishModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      lucide.createIcons();
+    }
+
+    function closeDishModal() {
+      const modal = document.getElementById('dishModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.getElementById('dishModal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'dishModal') {
+        closeDishModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
